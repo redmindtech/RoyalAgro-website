@@ -1,0 +1,20 @@
+<ul class="breadcrumb text-right hidden-sm hidden-xs" style="background-color: transparent !important;padding:0px;">
+      {% if fn != 'peanuts' %}
+      <li><a href="{% url 'peanuts' %}">Peanuts</a></li>
+      {% endif %}                       
+      {% if fn != 'greenmungbean' %}
+      <li> <a href="{% url 'greenmungbean' %}">Green Mung Bean</a></li>
+      {% endif %}                       
+      {% if fn != 'coriander' %}
+      <li> <a href="{% url 'coriander' %}">Coriander</a></li>
+      {% endif %}                       
+      {% if fn != 'chillies' %}
+      <li> <a href="{% url 'chillies' %}">Chillies</a></li>
+      {% endif %}                       
+      {% if fn != 'soybeans' %}
+      <li> <a href="{% url 'soybeans' %}">Soy</a></li>
+      {% endif %}                       
+      {% if fn != 'corn' %}
+      <li> <a href="{% url 'corn' %}">Corn</a></li>   
+      {% endif %}                       
+</ul>

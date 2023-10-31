@@ -1,0 +1,445 @@
+{% extends 'page_layout.html' %} {% block content %}
+<style type="text/css">
+#shipid_tf {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #fff !important;
+    width: 100% !important;
+}
+
+#shipid_tf input[type=text] {
+    height: auto;
+    width: 100% !important;
+    margin-right: 0px !important;
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
+}
+
+#shipid_tf select {
+    margin-bottom: 15px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    width: 100% !important;
+}
+
+input[type="text"],
+input[type="submit"],
+select {
+    padding: 10px 12px;
+    outline: none;
+    font-size: 13px;
+    color: #777;
+    margin: 0;
+    max-width: 100%;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    font-weight: 600;
+}
+
+.roundcont_green {
+    width: 100%;
+    color: #4A4A4A;
+    background: #fff !important;
+}
+
+#shipid_tf input[type=submit] {
+    display: inline-block;
+    padding: 12px 24px !important;
+    border-radius: 4px;
+    background: #ff9600;
+    font-family: 'texgyreadventorbold';
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+</style>
+<!-- Start Banner -->
+<div class="inner-banner blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="content">
+                    <h1>Resources</h1>
+                    <!-- <p>The commodities we source and trade</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Banner -->
+<!-- Start resources Tab -->
+<section class="details-tab">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="bs-example bs-example-tabs" data-example-id="togglable-tabs">
+                    <ul class="nav nav-tabs course-tab" id="myTabs" role="tablist">
+                        <li role="presentation" class="active shipping"> <a href="mba-marketing.html#curriculam" id="curriculam-tab" role="tab" data-toggle="tab" aria-controls="curriculam" aria-expanded="true" class="img1"> <span class="hidden-sm hidden-xs">
+                            <img src="{{MEDIA_URL}}images/tab1.png" id="tab1">
+                            <!-- <img src=".{{MEDIA_URL}}images/tab1h.png" id="tab1h"> --></span>
+                            <div class="block">Schedules & Tracking</div> </a> </li>
+                        <li role="presentation" class="courier"> <a href="mba-marketing.html#schedule" role="tab" id="schedule-tab" data-toggle="tab" aria-controls="schedule" aria-expanded="false" class="img2"> <span id="tab2" class="hidden-sm hidden-xs">
+                            <img src="{{MEDIA_URL}}images/tab2.png"  id="tab2"><!-- <img src=".{{MEDIA_URL}}images/tab2h.png" id="tab2h"> --></span>
+                            <div class="block">Document Tracking</div></a> </li>
+                        <li role="presentation" class=""> <a href="mba-marketing.html#reports" role="tab" id="reports-tab" data-toggle="tab" aria-controls="reports" aria-expanded="false"> <span id="tab4" class="hidden-sm hidden-xs">
+                            <img src="{{MEDIA_URL}}images/tab4.png" ></span><div class="block">Commodity Reports</div>
+                             </a> </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade active in" role="tabpanel" id="curriculam" aria-labelledby="curriculam-tab">
+                            <div class="hidden-md hidden-lg m-shipping-liners">
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="https://www.cma-cgm.com/" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-09.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="https://www.cma-cgm.com/ebusiness/schedules" target="_blank" class="preview">Schedule</a> <a href="https://www.cma-cgm.com/ebusiness/tracking" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="http://lines.coscoshipping.com/home.do" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-10.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="
+http://elines.coscoshipping.com/NewEB/informationQueryAndSubscribe.html?node=2003" target="_blank" class="preview">Schedule</a> <a href="http://elines.coscoshipping.com/NewEB/informationQueryAndSubscribe.html" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="https://www.evergreen-line.com/" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-11.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="https://www.shipmentlink.com/tvs2/jsp/TVS2_InteractiveSchedule.jsp" target="_blank" class="preview">Schedule</a> <a href="https://www.shipmentlink.com/servlet/TDB1_CargoTracking.do" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="https://www.hamburgsud-line.com/hsdg/en/hsdg/index.jsp" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-12.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="http://ecom.hamburgsud.com/ecom/en/ecommerce_portal/schedules_2/point_to_point/ep_point_to_point.xhtml?lang=EN" target="_blank" class="preview">Schedule</a> <a href="http://ecom.hamburgsud.com/ecom/en/ecommerce_portal/track_trace/track__trace/ep_trackandtrace.xhtml?lang=EN" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="https://www.hapag-lloyd.com/en/home.html" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-13.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="https://www.hapag-lloyd.com/en/service-finder/bydeparture.html" target="_blank" class="preview">Schedule</a> <a href="https://www.hapag-lloyd.com/en/online-business/tracing/tracing-by-container.html" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="https://www.hmm21.com/cms/company/engn/index.jsp" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-14.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="https://www.hmm21.com/cms/business/ebiz/schedule/trade/index.jsp" target="_blank" class="preview">Schedule</a> <a href="https://www.hmm21.com/cms/business/ebiz/trackTrace/trackTrace/index.jsp" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="http://www.kline.co.in/" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-15.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="http://grip.kline.co.jp/Form/RoutePlanner.html" target="_blank" class="preview">Schedule</a> <a href="http://ecom.kline.com/tracking" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="http://www.wanhai.com/views/Main.xhtml" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-25.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="http://www.wanhai.com/views/skd/SkdByPort.xhtml?file_num=64835&parent_id=64834&top_file_num=64735" target="_blank" class="preview">Schedule</a> <a href="http://www.wanhai.com/views/cargoTrack/CargoTrack.xhtml?file_num=65580&parent_id=64738&top_file_num=64735" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="http://www.zim.com/pages/default.aspx" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-17.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="http://www.zim.com/services/schedules/pages/default.aspx" target="_blank" class="preview">Schedule</a> <a href="#" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="https://www.maerskline.com/" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-18.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="https://my.maerskline.com/schedules" target="_blank" class="preview">Schedule</a> <a href="https://www.maerskline.com/routes/track-shipments" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="http://cms.molpower.com" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-19.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a target="_blank" href="http://web.molpower.com/Schedule/Search" class="preview">Schedule</a> <a href="http://web.molpower.com/Tracking/Main/Home" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="https://www.msc.com/ind" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-20.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="https://www.msc.com/search-schedules" class="preview" target="_blank">Schedule</a> <a href="https://www.msc.com/track-a-shipment" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="https://www.nykline.com/ecom/CUP_HOM_3000.do?redir=Y" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-21.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="https://www.nykline.com/ecom/CUP_HOM_3001.do?sessLocale=en" target="_blank" class="preview">Schedule</a> <a href="https://www.nykline.com/ecom/CUP_HOM_3301.do?sessLocale=en" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="http://www.oocl.com/eng/Pages/default.aspx" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-22.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="http://www.oocl.com/eng/ourservices/eservices/sailingschedule/Pages/default.aspx" target="_blank" class="preview">Schedule</a> <a href="http://www.oocl.com/eng/ourservices/eservices/cargotracking/Pages/cargotracking.aspx" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="https://www.pilship.com/en-pil-pacific-international-lines/1.html" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-23.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="https://www.pilship.com/en-port-schedules-pil-pacific-international-lines/118.html" target="_blank" class="preview">Schedule</a> <a href="https://www.pilship.com/en-our-track-and-trace-pil-pacific-international-lines/120.html" target="_blank" class="preview">Track</a></div>
+                                </div>
+                                <div class="col-sm-12 col-xs-12">
+                                    <a href="http://www.uasc.net/en" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-24.jpg" alt=""></a>
+                                    <div class="lecture-txt"><a href="http://uasconline.uasc.net/Schedules" target="_blank" class="preview">Schedule</a> <a href="http://www.uasc.net/en/our-containers" target="_blank" class="preview">Track</a></div>
+                                </div>
+                            </div>
+                            <div class="table-responsive hidden-sm hidden-xs">
+                                <table class="table course-table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.cma-cgm.com/" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-09.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="https://www.cma-cgm.com/ebusiness/schedules" target="_blank" class="preview">Schedule</a> <a href="https://www.cma-cgm.com/ebusiness/tracking" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="http://lines.coscoshipping.com/home.do" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-10.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="
+http://elines.coscoshipping.com/NewEB/informationQueryAndSubscribe.html?node=2003" target="_blank" class="preview">Schedule</a> <a href="http://elines.coscoshipping.com/NewEB/informationQueryAndSubscribe.html" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.evergreen-line.com/" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-11.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="https://www.shipmentlink.com/tvs2/jsp/TVS2_InteractiveSchedule.jsp" target="_blank" class="preview">Schedule</a> <a href="https://www.shipmentlink.com/servlet/TDB1_CargoTracking.do" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.hamburgsud-line.com/hsdg/en/hsdg/index.jsp" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-12.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="http://ecom.hamburgsud.com/ecom/en/ecommerce_portal/schedules_2/point_to_point/ep_point_to_point.xhtml?lang=EN" target="_blank" class="preview">Schedule</a> <a href="http://ecom.hamburgsud.com/ecom/en/ecommerce_portal/track_trace/track__trace/ep_trackandtrace.xhtml?lang=EN" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.hapag-lloyd.com/en/home.html" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-13.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="https://www.hapag-lloyd.com/en/service-finder/bydeparture.html" target="_blank" class="preview">Schedule</a> <a href="https://www.hapag-lloyd.com/en/online-business/tracing/tracing-by-container.html" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.hmm21.com/cms/company/engn/index.jsp" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-14.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="https://www.hmm21.com/cms/business/ebiz/schedule/trade/index.jsp" target="_blank" class="preview">Schedule</a> <a href="https://www.hmm21.com/cms/business/ebiz/trackTrace/trackTrace/index.jsp" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="http://www.kline.co.in/" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-15.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="http://grip.kline.co.jp/Form/RoutePlanner.html" target="_blank" class="preview">Schedule</a> <a href="http://ecom.kline.com/tracking" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="http://www.wanhai.com/views/Main.xhtml" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-25.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="http://www.wanhai.com/views/skd/SkdByPort.xhtml?file_num=64835&parent_id=64834&top_file_num=64735" target="_blank" class="preview">Schedule</a> <a href="http://www.wanhai.com/views/cargoTrack/CargoTrack.xhtml?file_num=65580&parent_id=64738&top_file_num=64735" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="http://www.zim.com/pages/default.aspx" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-17.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="http://www.zim.com/services/schedules/pages/default.aspx" target="_blank" class="preview">Schedule</a> <a href="http://www.zim.com/pages/findcontainer.aspx" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.maerskline.com/" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-18.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="https://my.maerskline.com/schedules" target="_blank" class="preview">Schedule</a> <a href="https://www.maerskline.com/routes/track-shipments" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="http://cms.molpower.com" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-19.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a target="_blank" href="http://web.molpower.com/Schedule/Search" class="preview">Schedule</a> <a href="http://web.molpower.com/Tracking/Main/Home" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.msc.com/ind" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-20.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="https://www.msc.com/search-schedules" class="preview" target="_blank">Schedule</a> <a href="https://www.msc.com/track-a-shipment" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.nykline.com/ecom/CUP_HOM_3000.do?redir=Y" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-21.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="https://www.nykline.com/ecom/CUP_HOM_3001.do?sessLocale=en" target="_blank" class="preview">Schedule</a> <a href="https://www.nykline.com/ecom/CUP_HOM_3301.do?sessLocale=en" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="http://www.oocl.com/eng/Pages/default.aspx" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-22.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="http://www.oocl.com/eng/ourservices/eservices/sailingschedule/Pages/default.aspx" target="_blank" class="preview">Schedule</a> <a href="http://www.oocl.com/eng/ourservices/eservices/cargotracking/Pages/cargotracking.aspx" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.pilship.com/en-pil-pacific-international-lines/1.html" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-23.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="https://www.pilship.com/en-port-schedules-pil-pacific-international-lines/118.html" target="_blank" class="preview">Schedule</a> <a href="https://www.pilship.com/en-our-track-and-trace-pil-pacific-international-lines/120.html" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="http://www.uasc.net/en" target="_blank"><img src="{{MEDIA_URL}}images/liner-icon-24.jpg" alt=""></a>
+                                                    <div class="lecture-txt"><a href="http://uasconline.uasc.net/Schedules" target="_blank" class="preview">Schedule</a> <a href="http://www.uasc.net/en/our-containers" target="_blank" class="preview">Track</a></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- table reponsive -->
+                        </div>
+                        <!-- curriculam end-->
+                        <div class="tab-pane fade" role="tabpanel" id="schedule" aria-labelledby="schedule-tab">
+                            <div class="hidden-md hidden-lg m-courier-services">
+                                <div class="col-xs-12 col-sm-12">
+                                    <a href="http://www.dhl.com/en/express/tracking.html" target="_blank"><img src="{{MEDIA_URL}}images/courier1.jpg" alt=""></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-12">
+                                    <a href="https://www.tnt.com/express/en_in/site/shipping-tools/tracking.html" target="_blank"><img src="{{MEDIA_URL}}images/courier2.jpg" alt=""></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-12">
+                                    <a href="https://www.aramex.com/" target="_blank"><img src="{{MEDIA_URL}}images/courier3.jpg" alt=""></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-12">
+                                    <a href="https://www.fedex.com/apps/fedextrack/" target="_blank"><img src="{{MEDIA_URL}}images/courier4.jpg" alt=""></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-12">
+                                    <a href="https://www.ups.com/WebTracking/track?loc=en_us" target="_blank"><img src="{{MEDIA_URL}}images/courier5.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="hidden-sm hidden-xs table-responsive w-courier-services">
+                                <table class="table course-table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="http://www.dhl.com/en/express/tracking.html" target="_blank"><img src="{{MEDIA_URL}}images/courier1.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.tnt.com/express/en_in/site/shipping-tools/tracking.html" target="_blank"><img src="{{MEDIA_URL}}images/courier2.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.aramex.com/" target="_blank"><img src="{{MEDIA_URL}}images/courier3.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.fedex.com/apps/fedextrack/" target="_blank"><img src="{{MEDIA_URL}}images/courier4.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="table-col1">
+                                                    <a href="https://www.ups.com/WebTracking/track?loc=en_us" target="_blank"><img src="{{MEDIA_URL}}images/courier5.jpg" alt=""></a>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" role="tabpanel" id="reports" aria-labelledby="reports-tab">
+                            <div class="row">
+                                <div class="col-sm-12" style="padding: 5%;">
+                                    <div class="content col-sm-12 col-lg-12">
+                                        <h4>Peanuts</h4>
+                                        <a href="https://www.peanutsusa.com/about-peanuts/usda-reports.html" target="_blank" class="col-md-3">                                                
+                                                    <img src="{{MEDIA_URL}}images/report_logos/usda_peanut.jpg" style="" />
+                                                    <h5>Peanuts Reports</h5>
+                                                    <p class="text-muted">Source :  USDA</p>
+                                                </a>
+                                        <a href="https://www.peanutsusa.com/about-peanuts/usda-reports.html" target="_blank" class="col-md-3">                                                
+                                                    <img src="{{MEDIA_URL}}images/report_logos/usda_peanut.jpg" style="" />
+                                                    <h5>Oilseeds world markets and trade</h5>
+                                                    <p class="text-muted">Source :  USDA (FAS)</p>
+                                                </a>
+                                    </div>
+                                    <div class="content col-lg-12">
+                                        <h4>Pulses</h4>
+                                        <a href="http://www.pulseaus.com.au/marketing/crop-forecast" target="_blank" class="col-md-3">                                                
+                                                    <img src="{{MEDIA_URL}}images/report_logos/pulse_crop_forcasting.jpg" style="" />
+                                                    <h5>Pulse Crop Forecasting</h5>
+                                                    <p class="text-muted">Source :  Pulse Australia</p>
+                                                </a>
+                                        <a href="http://saskpulse.com/communications/newsletters/pulse-market-report/archive" target="_blank" class="col-md-3"> 
+                                                    <img src="{{MEDIA_URL}}images/report_logos/pulse_market_reports.jpg" style="" />
+                                                    <h5>Pulse Market Reports</h5>
+                                                    <p class="text-muted">Source : Saskatchewan Pulse Growers</p>
+                                                </a>
+                                        <a href="https://ussec.org/media-type/reports/" target="_blank" class="col-md-3">
+                                                    <img src="{{MEDIA_URL}}images/report_logos/us_soya_bean.jpg" style="" />
+                                                    <h5>Soya Bean Reports</h5>
+                                                    <p class="text-muted">Source : USSEC</p>
+                                                </a>
+                                    </div>
+                                    <div class="content col-lg-12">
+                                        <h4>Grains</h4>
+                                        <a href="http://www.worldofcorn.com" target="_blank" class="col-md-3">                                                
+                                                    <img src="{{MEDIA_URL}}images/report_logos/world_of_corn.jpg" style="" />
+                                                    <h5>World of corn</h5>
+                                                    <p class="text-muted">Source :  National Corn Growers Association USA</p>
+                                                </a>
+                                        <a href="http://www.grains.org/market-data/market-perspectives" target="_blank" class="col-md-3">                                                
+                                                    <img src="{{MEDIA_URL}}images/report_logos/us_grain.jpg" style="" />
+                                                    <h5>Grains Market Perspectives</h5>
+                                                    <p class="text-muted">Source :  US Grains Council</p>
+                                                </a>
+                                        <a href="http://www.grains.org/annualreport2016" target="_blank" class="col-md-3">                                                
+                                                    <img src="{{MEDIA_URL}}images/report_logos/us_grain.jpg" style="" />
+                                                    <h5>Grains Market Annnual Report 2016</h5>
+                                                    <p class="text-muted">Source :  US Grains Council</p>
+                                                </a>
+                                        <a href="http://www.cmegroup.com/trading/agricultural/corn-reports.html" target="_blank" class="col-md-3">                                                
+                                                    <img src="{{MEDIA_URL}}images/report_logos/cme.jpg" style="" />
+                                                    <h5>Corn Reports</h5>
+                                                    <p class="text-muted">Source :  CME Group</p>
+                                                </a>
+                                        <div class="clearfix"></div>
+                                        <a href="http://www.cmegroup.com/trading/agricultural/wheat-reports.html" target="_blank" class="col-md-3">                                                
+                                                    <img src="{{MEDIA_URL}}images/report_logos/cme.jpg" style="" />
+                                                    <h5>Wheat Reports</h5>
+                                                    <p class="text-muted">Source :  CME Group</p>
+                                                </a>
+                                        <a href="http://www.cmegroup.com/trading/agricultural/soybean-reports.html" target="_blank" class="col-md-3">                                                
+                                                    <img src="{{MEDIA_URL}}images/report_logos/cme.jpg" style="" />
+                                                    <h5>Soybeans Reports</h5>
+                                                    <p class="text-muted">Source :  CME Group</p>
+                                                </a>
+                                        <a href="https://graintrade.com.ua/en/novosti/tcogorichnij-eksport-soi-z-brazilii-vzhe-perevishiv-pokaznik-2016-roku.html" target="_blank" class="col-md-3">                                                
+                                                    <img src="{{MEDIA_URL}}images/report_logos/pulse_crop_forcasting.jpg" style="" />
+                                                    <h5>Grains Trade</h5>
+                                                    <p class="text-muted">Source :  Grain Trade</p>
+                                                </a>
+                                        <a href="http://www.soybeansandcorn.com/News" target="_blank" class="col-md-3">                                                
+                                                    <img src="{{MEDIA_URL}}images/report_logos/soyabean_corn_advisor.jpg" style="" />
+                                                    <h5>Brazil Grains Reports</h5>
+                                                    <p class="text-muted">Source :  Soybean and Corn Advisor</p>
+                                                </a>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-sm-6">
+                                        <ul class="content">
+                                            <li>
+                                                <h4>Lorem Ipsum is simply dummy</h4>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. has been the industry's standard</p>
+                                            </li>
+                                            <li>
+                                                <h4>Lorem Ipsum is simply dummy</h4>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. has been the industry's standard</p>
+                                            </li>
+                                            <li>
+                                                <h4>Lorem Ipsum is simply dummy</h4>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. has been the industry's standard</p>
+                                                <ul>
+                                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. has been the industry's standard</li>
+                                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. has been the industry's standard</li>
+                                                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. has been the industry's standard</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!-- teachers-tab -->
+                        </div>
+                        <!-- tab-content -->
+                    </div>
+                    <!-- tooggle tabs -->
+                </div>
+                <!-- col-md-12 -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+</section>
+{% endblock %}

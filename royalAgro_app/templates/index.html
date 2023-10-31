@@ -1,0 +1,262 @@
+{% extends 'page_layout.html' %}
+{% block content %}
+<!-- Start Banner Carousel -->
+<div class="banner-outer">
+  <div class="banner-slider">
+    <div class="slide1">
+    <div class="overlay-banner"></div>
+      <div class="container">
+        <div class="content animated fadeInleft">
+          <div class="fl-left">
+            <h1 class="animated fadeInLeft"><span class="animated fadeInLeft">ORIGINATION</span> </h1>
+            <p class="animated fadeInLeft">Diverse Product Origination</p>
+            <!-- <a href="about.html" class="btn animated fadeInRight">Know More <span class="icon-more-icon"></span></a> --> </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide2">
+    <div class="overlay-banner"></div>
+      <div class="container">
+        <div class="content">
+          <h1 class="animated fadeInUp">LOGISTICS</h1>
+          <p class="animated fadeInUp">Globally Integrated Logistics</p>
+          <!-- <a href="about.html" class="btn animated fadeInUp">Know More <span class="icon-more-icon"></span></a> <a href="gallery.html" class="btn white animated fadeInUp hidden-xs">Take a Tour <span class="icon-more-icon"></span></a> --> </div>
+      </div>
+    </div>
+    <div class="slide3">
+    <div class="overlay-banner"></div>
+      <div class="container">
+        <div class="content animated fadeInRight">
+          <div class="fl-right">
+          <h1 class="animated fadeInRight">TOUCH & TRADE</h1>
+          <p class="animated fadeInRight">Customized happy trades 24/7</p>
+          <!-- <a href="about.html" class="btn animated fadeInLeft">Know More <span class="icon-more-icon"></span></a>  -->
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Banner Carousel -->
+
+<!-- Start About Section -->
+<section class="about">
+  <div class="container">
+    <ul class="row our-links">
+      <li class="col-sm-4 apply-online clearfix equal-hight">
+        <div class="icon"><img src="{{MEDIA_URL}}images/orgination.png" class="img-responsive" alt=""></div>
+        <div class="detail">
+          <h3>Origination</h3>
+          <p>Diverse Product Origination</p>
+        </div>
+      </li>
+      <li class="col-sm-4 prospects clearfix equal-hight">
+        <div class="icon"><img src="{{MEDIA_URL}}images/logistics.png" class="img-responsive" alt=""></div>
+        <div class="detail">
+          <h3>Logistics</h3>
+          <p>Globally Integrated Logistics</p>
+          </div>
+      </li>
+      <li class="col-sm-4 certification clearfix equal-hight">
+        <div class="icon"><img src="{{MEDIA_URL}}images/24hrs.png" class="img-responsive" alt=""></div>
+        <div class="detail">
+          <h3>TOUCH & Trade</h3>
+          <p>Customized happy trades 24/7</p>
+          </div>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-push-6 left-block"> <span class="sm-head">A Niche Agriculture Commodity Trading Company</span>
+        <h2>ROYAL AGRO</h2>
+        <p>Royal Agro deals with the world’s leading agricultural processors serving our diverse group of customers efficiently and profitably. We operate the one of the world’s distinct and customized crop origination and transportation network, connecting crops in different origins and markets primarily in Asia and elsewhere. Our customers benefit from our hands on approach, integrated supply chains, strong relationships with farmers/cooperatives, and distinguished range of logistical, analytical and technological services.</p>
+        <div class="know-more-wrapper hidden-sm hidden-xs">         
+        <a href="{% url 'about' %}" class="know-more hidden-sm hidden-xs">Know More <span class="icon-more-icon"></span></a> </div>
+        <div class="hidden-md hidden-lg text-center"> 
+        <a href="{% url 'about' %}" class="mb10 btn">Know More <span class="icon-more-icon"></span></a>
+        
+      </div>
+      
+    </div>
+    <div class="col-sm-12 col-sm-pull-6 col-md-6 col-lg-6">
+        <img src="{{MEDIA_URL}}images/who-we-are.jpg" class="img-responsive" alt="">
+      </div>
+  </div>
+</section>
+<!-- End About Section -->
+
+<!-- Start Our Importance Section -->
+
+<section class="our-impotance our-impotance-mobile padding-lg hidden-xs hidden-sm" style="padding-top:0px;">
+  <div class="container">
+    <ul class="row">
+      <li class="col-sm-4 equal-hight box_style">
+        <div class="inner"> <img src="{{MEDIA_URL}}images/explore.png" alt="">
+          <h2>Explore</h2>
+          <p>Engage with new people worldwide.</p>
+        </div>
+      </li>
+      <li class="col-sm-4 equal-hight box_style">
+        <div class="inner"> <img src="{{MEDIA_URL}}images/create.png" alt="">
+          <h2>Create</h2>
+          <p>Build relationship by trust.</p>
+        </div>
+      </li>
+      <li class="col-sm-4 equal-hight box_style">
+        <div class="inner"> <img src="{{MEDIA_URL}}images/consolidate.png" alt="">
+          <h2>Consolidate</h2>
+          <p>Single window global sourcing.</p>
+        </div>
+      </li>
+      <li class="col-sm-4 equal-hight box_style">
+        <div class="inner"> <img src="{{MEDIA_URL}}images/trade.png" alt="">
+          <h2>Trade</h2>
+          <p>Anywhere Anytime trading app.</p>
+        </div>
+      </li>
+      <li class="col-sm-4 equal-hight box_style">
+        <div class="inner"> <img src="{{MEDIA_URL}}images/integrate.png" alt="">
+          <h2>Integrate</span></h2>
+          <p>Realtime logistics management.</p>
+        </div>
+      </li>
+      <li class="col-sm-4 equal-hight box_style">
+        <div class="inner"> <img src="{{MEDIA_URL}}images/satisfy.png" alt="">
+          <h2>Satisfy</span></h2>
+          <p>Customer satisfaction is our prority!</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section>
+<div class="container hidden-md hidden-lg">
+    <div class="row our-impotance-mobile">
+        <div class="col-md-12">
+            <div class="media">
+              <div class="media-left">
+                <a href="javascript:void(0)">
+                  <img class="media-object" src="{{MEDIA_URL}}images/explore.png" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4>Explore</h4>
+                Engage with new people worldwide.
+              </div>
+            </div>
+        </div>        
+    </div>
+    <div class="row our-impotance-mobile">
+        <div class="col-md-12">
+            <div class="media">
+              <div class="media-left">
+                <a href="javascript:void(0)">
+                  <img class="media-object" src="{{MEDIA_URL}}images/create.png" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Create</h4>
+               Build relationship by trust.
+              </div>
+            </div>
+        </div>        
+    </div>
+    <div class="row our-impotance-mobile">
+        <div class="col-md-12">
+            <div class="media">
+              <div class="media-left">
+                <a href="javascript:void(0)">
+                  <img class="media-object" src="{{MEDIA_URL}}images/consolidate.png" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Consolidate</h4>
+               Single window global sourcing.
+              </div>
+            </div>
+        </div>        
+    </div>
+    <div class="row our-impotance-mobile">
+        <div class="col-md-12">
+            <div class="media">
+              <div class="media-left">
+                <a href="javascript:void(0)">
+                  <img class="media-object" src="{{MEDIA_URL}}images/trade.png" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Trade</h4>
+               Anywhere Anytime trading app.
+              </div>
+            </div>
+        </div>        
+    </div>
+    <div class="row our-impotance-mobile">
+        <div class="col-md-12">
+            <div class="media">
+              <div class="media-left">
+                <a href="javascript:void(0)">
+                  <img class="media-object" src="{{MEDIA_URL}}images/integrate.png" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Integrate</h4>
+               Realtime logistics management.
+              </div>
+            </div>
+        </div>        
+    </div>
+    <div class="row our-impotance-mobile">
+        <div class="col-md-12">
+            <div class="media">
+              <div class="media-left">
+                <a href="javascript:void(0)">
+                  <img class="media-object" src="{{MEDIA_URL}}images/satisfy.png" alt="...">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Satisfy</h4>
+               Customer satisfaction is our prority!
+              </div>
+            </div>
+        </div>        
+    </div>
+</div>
+</section>
+
+<!-- End Our Importance Section -->
+
+
+<!-- Start Why Choose Section -->
+
+<section class="why-choose padding-lg">
+  <div class="container">
+    <h2><span>The Numbers Say it All</span>Why Choose Us</h2>
+    <ul class="our-strength">
+      <li>
+        <span class="counter">6</span>
+        <div class="title">continent sources</div>
+      </li>
+       <li>
+
+        <div class="couter-outer"><span class="counter">100</span><span>+</span></div>
+        <div class="title">Direct Producers	</div>
+      </li>
+      <li>
+        <div class="couter-outer"><span class="counter">1000</span><span>+</span></div>
+        <div class="title">MT CAPACITY PER DAY</div>
+      </li>
+      <li>
+        <div class="couter-outer"><span class="counter">24</span><span>/</span><span>7</span></div>
+        <div class="title">TOUCH &TRADE</div>
+      </li>
+      
+    </ul>
+  </div>
+</section>
+
+<!-- End Why Choose Section -->
+
+{% endblock %}

@@ -1,0 +1,126 @@
+{% extends 'page_layout.html' %}
+{% block content %}
+    <!-- Start Video -->
+    <section class="peanut_video hidden-sm hidden-xs">
+        <div class="blog" data-vide-bg="{{MEDIA_URL}}video/coriander" style="min-height: 500px;">
+        </div>
+    </section>
+    <!-- End Video -->
+    <!-- Start products Description -->
+    <section class="padding-tp products commodity">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Coriander
+                    <span class="pull-right more_products hidden-sm hidden-xs" style="">Our Other Products</span>
+                    </h1>
+                    {% include 'includes/our_products.html' %}
+                    <!-- <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End products Description -->
+    <!-- Start Our Importance Section -->
+    <section class="padding-tp products">
+        <div class="container">
+            <ul class="row">
+                <li class="col-sm-4 col-xs-12 prodimg">
+                     <img src="{{MEDIA_URL}}images/products/coriander/c1.jpg" class="img-responsive" alt="">
+                </li>
+                <li class="col-sm-4 col-xs-12 prodimg">
+                     <img src="{{MEDIA_URL}}images/products/coriander/c2.jpg" class="img-responsive" alt="">
+                </li>
+                <li class="col-sm-4 col-xs-12 prodimg">
+                     <img src="{{MEDIA_URL}}images/products/coriander/c3.jpg" class="img-responsive" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- End Our Importance Section -->
+    <!--  Specification starts here -->
+    <section class="padding-tp products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Specification</h2>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2" class="text-center">Features</th>
+                                    <th colspan="4" class="text-center">Origin</th>
+                                </tr>
+                                <tr>
+                                    <th>Russia</th>
+                                    <th>Ukraine</th>                                    
+                                    <th>Argentina</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            
+                                <tr>
+                                    <td>Purity</td>
+                                    <td>98%</td>
+                                    <td>98.20%</td>
+                                    <td>98%</td>
+                                </tr>
+                                <tr>
+                                    <td>Moisture</td>
+                                    <td>8 - 10%</td>
+                                    <td>10.20%</td>
+                                    <td>9%</td>
+                                </tr>
+                                <tr>
+                                    <td>Split</td>
+                                    <td>1 - 5%</td>
+                                    <td>2.40%</td>
+                                    <td>2%</td>
+                                </tr>                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end specification -->
+    <!-- start loading -->
+    <section class="padding-tp-bt products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="prod-h2">Packing</h2>
+                    <div class="table-responsive ">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Packing type</th>
+                                    <th>25 Kgs PP</th>                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>No of bags per 40' FCL</td>
+                                    <td>880</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>Gross Capacity per 40' FCL</td>
+                                    <td>22 Mt</td>                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'includes/contact.html' %}       
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="{{MEDIA_URL}}js/jquery.min.js"></script>
+    
+    <script type="text/javascript" src="{{MEDIA_URL}}js/jquery.vide.js"></script>
+{% endblock %}
