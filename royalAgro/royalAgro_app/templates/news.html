@@ -1,0 +1,79 @@
+{% extends 'page_layout.html' %}
+{% block content %}
+    <style type="text/css">   
+    .feeds .list-group-item{padding:15px;}
+    </style>
+    <!-- Start Banner -->
+    <div class="inner-banner blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="content">
+                        <h1>News & events</h1>
+                        <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+    <!-- Start News & Events -->
+    <section class="news-wrapper padding-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="feeds"></div>
+                </div>
+                <div class="col-sm-4 twitter_section" style="margin-top: 0px;overflow-x: hidden;overflow-y: scroll;">
+                    
+                        
+                        <a class="twitter-timeline" href="https://twitter.com/expo2020dubai">Tweets by expo2020dubai</a>
+                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End News & Events -->    
+
+        <script type="text/javascript" src="{{MEDIA_URL}}js/jquery.min.js"></script>
+        <script type="text/javascript" src="{{MEDIA_URL}}js/jquery.rss.min.js"></script>
+        <script type="text/javascript">      
+        $(document).ready(function($) {
+            $("#loading").fadeOut(2500);
+            var feed = ["http://www.cornandsoybeandigest.com/rss.xml", "https://www.fas.usda.gov/feeds/news-releases", "http://www.iowacorn.org/about/news/rss/", "https://www.iowacorn.org/about/news/rss/","https://www.graincentral.com/news/feed","https://www.graincentral.com/special-features/feed","https://www.graincentral.com/markets/feed","https://www.graincentral.com/production/feed","https://www.graincentral.com/lot-feeding/feed","https://www.graincentral.com/processing/feed","https://www.graincentral.com/trade/feed","https://www.agweb.com/corn-harvest-map/","https://www.agweb.com/crops/soybean-harvest-map/","https://www.agweb.com/rss/","http://www.farmfutures.com/rss.xml","http://grainindustry.einnews.com/rss/krPXDBmK-6VC9mUV","http://www.gapeanuts.com/audio_rss.php", "http://www.grainscanada.gc.ca/rss/licensed-agreees-eng.xml"];
+              
+              $.each( feed, function( i, val ) {
+              $(".feeds").rss(val,
+              {
+                tokens: {
+                    
+                    "img-src": function(entry, tokens){                                          
+                        if(tokens.teaserImageUrl){
+                            return '<img class="media-object" src="http://www.'+tokens.author+tokens.teaserImageUrl+'" style="height:100px;width:100px;" alt="'+tokens.title+'">';
+                        }
+                        else{
+                            return "";
+                        }
+                    },
+                    static: "static"
+                  },
+                // entryTemplate:'<a href="{url}" target="_blank" class="list-group-item"><h6>{title}</h6><img src="http://www.{author}{teaserImageUrl}"/><p>{shortBodyPlain}</p></a>'
+                layoutTemplate: "<div class='list-group'>{entries}</div>",
+                entryTemplate : '<a href="{url}" target="_blank" class="list-group-item"  style="display:flex;"><div class="col-md-12 "><div class="media"><div class="media-left">{img-src}</div><div class="media-body"><h5 class="media-heading" style="text-transform:none;">{title}</h5>{shortBodyPlain}<p></p></div></div></div></a>',  
+                 success: function(){
+                    var feed_height = $(".feeds").height();
+                    $(".twitter_section").css("max-height",feed_height+"px"); 
+                 },               
+              })
+
+              });  
+              
+             
+              
+
+        });
+            
+        </script>
+{% endblock %}

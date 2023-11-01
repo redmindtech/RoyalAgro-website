@@ -1,0 +1,551 @@
+{% extends 'page_layout.html' %}
+{% block content %}
+    <!-- Start Video -->
+    <section class="peanut_video hidden-sm hidden-xs">
+        <div class="blog" data-vide-bg="{{MEDIA_URL}}video/peanut" style="min-height: 500px;">
+        </div>
+    </section>
+    <!-- End Video -->
+    <!-- Start products Description -->
+    <section class="padding-tp products commodity">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Peanuts <span class="pull-right more_products hidden-sm hidden-xs" style="">Our Other Products</span></h1>
+                    {% include 'includes/our_products.html' %}
+                    <!-- <p>Supply of peanuts from new origins in Africa to new and existing clients creating new opportunities at both ends of the supply chain.
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End products Description -->
+    <!-- Start Our Importance Section -->
+    <section class="padding-tp products">
+        <div class="container">
+            <ul class="row">
+                <li class="col-sm-4 col-xs-12 prodimg">
+                    <img src="{{MEDIA_URL}}images/products/peanuts/g1.jpg" class="img-responsive" alt="">
+                </li>
+                <li class="col-sm-4 col-xs-12 prodimg">
+                    <img src="{{MEDIA_URL}}images/products/peanuts/g2.jpg" class="img-responsive" alt="">
+                </li>
+                <li class="col-sm-4 col-xs-12 prodimg">
+                    <img src="{{MEDIA_URL}}images/products/peanuts/g6.jpg" class="img-responsive" alt="">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- End Our Importance Section -->
+    <!--  Specification starts here -->
+    <section class="padding-tp products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Specification</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th rowspan="2" style="width:20%;" class="text-center">Features</th>
+                                    <th colspan="7" class="text-center">Origin</th>
+                                </tr>
+                                <tr>
+                                    <th style="width:20%">India</th>        
+                                    <th style="width:20%">Argentina</th>                                    
+                                    <th style="width:20%">Sudan</th>
+                                    <th style="width:20%">Mozambique</th>                                                                                
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Types</td>
+                                    <td>Bold, Java, JL Mix, TJ and mix</td>
+                                    <td>Runners</td>
+                                    <td>Java</td>
+                                    <td>Java</td>
+                                </tr>
+                                <tr>
+                                    <td>Counts per Ounce</td>
+                                    <td>38/42, 40/50, 50/60, 60/70, 80/90, 90/100, 140/160</td>
+                                    <td>38/42, 40/50, 50/60, 80/100</td>
+                                    <td>80/90</td>
+                                    <td>80/100</td>
+                                </tr>
+                                <tr>
+                                    <td>Forms</td>
+                                    <td>In shell, Red Skin, White Skin Raw Whole and Spllits</td>
+                                    <td>Runners</td>
+                                    <td>Raw Whole </td>
+                                    <td>Raw Whole </td>
+                                </tr>
+                                <tr>
+                                    <td>Broken or Splits (Max)</td>
+                                    <td>1.00 - 2.00%</td>
+                                    <td> 4.00% (Apr - Sept) / 6.00% (Oct - Mar)</td>
+                                    <td>2.00% - 3.00%</td>
+                                    <td>4%</td>
+                                </tr>
+                                <tr>
+                                    <td>Moisture (Max)</td>
+                                    <td>7.00 - 8.00%</td>
+                                    <td>8.00%</td>
+                                    <td>6.00% </td>
+                                    <td>8.00% </td>
+                                </tr>
+                                <tr>
+                                    <td>Admixture (Max)</td>
+                                    <td>1.00 - 2.00%</td>
+                                    <td>Other Colour Kernels: 1.00%</td>
+                                    <td>1.00%</td>
+                                    <td>1.00 - 2.00%</td>
+                                </tr>
+                                <tr>
+                                    <td>Foreign Material (Max)</td>
+                                    <td>0.50 - 1.00%</td>
+                                    <td>Kernels with an altered presentation (*): 5.00%</td>
+                                    <td>1.00%</td>
+                                    <td>0.50 - 1.00%</td>
+                                </tr>
+                                <tr>
+                                    <td>Oil content</td>
+                                    <td>~ 40% - 48% (depending on origin)</td>
+                                    <td>High Oleic Peanuts</td>
+                                    <td>46% min</td>
+                                    <td>46% min</td>
+                                </tr>
+                                <tr>
+                                    <td>Aflatoxin</td>
+                                    <td>Below 15 PPB as per export norms</td>
+                                    <td>Less than 4 ppb Total / Less than 2 ppb B1 (According to EU requirements).</td>
+                                    <td>MERCHANTABLE QUALITY AND FIT FOR HUMAN CONSUMPTION.</td>
+                                    <td>AFLATOXIN - SHIPPED QUALITY CERTIFICATE ONLY (LESS THAN 15 PPB). NO LANDED AFLATOXIN GUARANTEE
+</td>
+                                </tr>
+                                <tr>
+                                    <td>Live Insects</td>
+                                    <td>Nil</td>
+                                    <td>Libre</td>
+                                    <td>Nil</td>
+                                    <td>Nil</td>
+                                </tr>
+                                <tr>
+                                    <td>Free Fatty Acid (Max)</td>
+                                    <td>1.00%</td>
+                                    <td>0.70%</td>
+                                    <td>1.00%</td>
+                                    <td>1.00%</td>
+                                </tr>
+                                <tr>
+                                    <td>Machine Cleaned</td>
+                                    <td>Yes</td>
+                                    <td>Yes</td>
+                                    <td>Yes</td>
+                                    <td>Yes</td>
+                                </tr>
+                                <tr>
+                                    <td>Color Sorted</td>
+                                    <td>HPS</td>
+                                    <td>Yes</td>
+                                    <td>HPS / Color Sorted *</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>Sowing</td>
+                                    <td>Different Seasons</td>
+                                    <td>Oct - Nov</td>
+                                    <td>June - July</td>
+                                    <td>Dec - Jan</td>
+                                </tr>
+                                <tr>
+                                    <td>Harvest</td>
+                                    <td>Summer - Winter</td>
+                                    <td>Apr - May</td>
+                                    <td>Nov</td>
+                                    <td>Mar - Apr</td>
+                                </tr>                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end specification -->
+    <!-- start loading -->
+    <section class="padding-tp-bt products">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="prod-h2">Packing</h2>
+                    <div class="table-responsive ">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Packing type</th>
+                                    <th>50 Kg Jute Bag</th>                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>No of bags per 20' FCL</td>
+                                    <td>360 - 400 Bags</td>                                    
+                                </tr>
+                                <tr>
+                                    <td>Gross Capacity per 20' FCL</td>
+                                    <td>18 to 20 MTS</td>                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <section class="[padding-tp-bt products">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+                <h2 class="prod-h2">US - RUNNER PEANUTS</h2>
+                <table class="table table-bordered">
+                <thead>
+                <tr>
+                <th style="width:12.5%">Grade & Minimum Screen Size</th>
+                <th style="width:12.5%">% Fall-Thru Prescribed Screens for SWK</th>
+                <th style="width:12.5%">% Fall-Thru 17/64” Round Screen for SWK and/or SS+Broken</th>
+                <th style="width:12.5%">%
+                Other Types</th>
+                <th style="width:12.5%">% Splits</th>
+                <th style="width:12.5%">% Damage & Minor Defects</th>
+                <th style="width:12.5%">% Foreign Material</th>
+                <th style="width:12.5%">% Moisture</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>JUMBO 21/64 x ¾” Slot or 38/42 count per oz.</td>
+                <td>6.00 </td>
+                <td>6.00 </td>
+                <td>1.00 </td>
+                <td>5.00 </td>
+                <td>3.50 </td>
+                <td>0.10</td>
+                <td>9.00</td>
+                </tr>
+                <tr>
+                <td>MEDIUM 18/64 x ¾” Slot</td>
+                <td>6.00 </td>
+                <td>6.00 </td>
+                <td>1.00 </td>
+                <td>5.00 </td>
+                <td>3.50 </td>
+                <td>0.10</td>
+                <td>9.00</td>
+                </tr>
+                <tr>
+                <td>NO. 1 16/64 x ¾” Slot</td>
+                <td>6.00 </td>
+                <td>6.00 </td>
+                <td>1.00 </td>
+                <td>5.00 </td>
+                <td>3.50 </td>
+                <td>0.10</td>
+                <td>9.00</td>
+                </tr>
+                <tr>
+                <td>NO. 2 16/64 x ¾” Slot</td>
+                <td> - </td>
+                <td>6.00 </td>
+                <td>2.00 </td>
+                <td> - </td>
+                <td>3.50 </td>
+                <td>0.20</td>
+                <td>9.00</td>
+                </tr>
+                <tr>
+                <td>SPLITS 17/64 Round</td>
+                <td> - </td>
+                <td>6.00 </td>
+                <td>2.00 </td>
+                <td> Not less than 90.00 </td>
+                <td>3.50 </td>
+                <td>0.20</td>
+                <td>9.00</td>
+                </tr>
+
+                <tr>
+                <td >“With Splits” </td>
+                <td colspan="7" style="border-left: 0px;"> Each of the above whole grades may be certified “with splits” providing all requirements of the grade are met; except a tolerance of 15% is allowed for split kernels.</td>
+
+                </tr>
+                </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+ <section class="[padding-tp-bt products">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+                <h2 class="prod-h2">US - IN-SHELL VIRGINIA PEANUTS</h2>
+                <table class="table table-bordered">
+                <thead>
+                <tr>
+                <th style="width:25%">Grade & Minimum Screen Size</th>
+                <th style="width:25%">% Fall-Thru Prescribed Screen</th>
+                <th style="width:25%">% Cracked or Broken Shells, Pops, Paper & Foreign Material</th>
+                <th style="width:25%">% Damaged Kernels</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>JUMBO 37/64 x 3” or 176 count per pound</td>
+                <td>15.00 </td>
+                <td>*11.00</td>
+                <td>3.5</td>
+                </tr>
+                <tr>
+                <td>FANCY 37/64 x 3” or FANCY count per pound</td>
+                <td>15.00 </td>
+                <td>*12.00</td>
+                <td>3.5</td>
+                </tr>
+                </tbody>
+                </table>
+
+                <label class="text-muted">* 0.75 allowed for dirt or other foreign material.</label>
+            </div>
+            </div>
+        </div>
+</section>  
+
+ <section class="[padding-tp-bt products">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+                <h2 class="prod-h2">US - SHELLED VIRGINIA PEANUTS</h2>
+                <table class="table table-bordered">
+                <thead>
+                <tr>
+                <th style="width:12.5%">Grade & Minimum Screen Size</th>
+                <th style="width:12.5%">% Fall-Thru Prescribed Screens for SWK</th>
+                <th style="width:12.5%">% Fall-Thru 17/64” Round Screen for SWK and/or SS+Broken</th>
+                <th style="width:12.5%">%
+                Other Types</th>
+                <th style="width:12.5%">% Sound Split or Broken Kernels</th>
+                <th style="width:12.5%">% Damage & Minor Defects</th>
+                <th style="width:12.5%">% Foreign Material</th>
+                <th style="width:12.5%">% Moisture</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>EXTRA LARGE 20/64 x 1” Slot</td>
+                <td>5.00 </td>
+                <td>6.00 </td>
+                <td>0.75 </td>
+                <td>5.00 </td>
+                <td>3.50 </td>
+                <td>0.10</td>
+                <td>9.00</td>
+                </tr>
+                <tr>
+                <td>MEDIUM VIRGINIA 18/64” x 1” Slot</td>
+                <td>5.00 </td>
+                <td>6.00 </td>
+                <td>1.00 </td>
+                <td>5.00 </td>
+                <td>3.50 </td>
+                <td>0.10</td>
+                <td>9.00</td>
+                </tr>
+                <tr>
+                <td>NO. 1 VIRGINIA 15/64 x 1” Slot</td>
+                <td>5.00 </td>
+                <td>6.00 </td>
+                <td>1.00 </td>
+                <td>5.00 </td>
+                <td>3.50 </td>
+                <td>0.10</td>
+                <td>9.00</td>
+                </tr>
+                <tr>
+                <td>VIRGINIA SPLITS 20/64” Round</td>
+                <td> *5.00 </td>
+                <td>6.00 </td>
+                <td>2.00 </td>
+                <td> Not Less Than 90.00 </td>
+                <td>3.50 </td>
+                <td>0.20</td>
+                <td>9.00</td>
+                </tr>
+                <tr>
+                <td>NO. 2 VIRGINIA 17/64” Round</td>
+                <td> - </td>
+                <td>6.00 </td>
+                <td>2.00 </td>
+                <td> - </td>
+                <td>3.50 </td>
+                <td>0.20</td>
+                <td>9.00</td>
+                </tr>
+
+                <tr>
+                <td>“With Splits”</td>
+                <td colspan="7">* Includes both sound split and broken and sound whole kernels which pass through prescribed screens. Each of the above APSA whole grades may be certified as “with splits” providing all requirements of the grade are met; except a tolerance of 15% is allowed for split kernels. </td>
+
+                </tr>
+                </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="[padding-tp-bt products">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+            <h2 class="prod-h2">US - SHELLED SPANISH PEANUTS</h2>
+                <table class="table table-bordered">
+                <thead>
+                <tr>
+                <th style="width:12.5%">Grade & Minimum Screen Size</th>
+                <th style="width:12.5%">% Fall-Thru Prescribed Screens for SWK</th>
+                <th style="width:12.5%">% Fall-Thru 16/64” Round Screen for SWK and/or SS+Broken</th>
+                <th style="width:12.5%">% Other Types</th>
+                <th style="width:12.5%">% Splits</th>
+                <th style="width:12.5%">% Damage & Minor Defects</th>
+                <th style="width:12.5%">% Foreign Material</th>
+                <th style="width:12.5%">% Moisture</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>No. 1 15/64 x ¾” Slot</td>
+                <td>5.00 </td>
+                <td>6.00 </td>
+                <td>1.00 </td>
+                <td>3.00 </td>
+                <td>3.50 </td>
+                <td>0.10</td>
+                <td>9.00</td>
+                </tr>
+                <tr>
+                <td>SPLITS 16/64” Round</td>
+                <td> - </td>
+                <td>6.00 </td>
+                <td>2.00 </td>
+                <td>Not Less Than 90.00 </td>
+                <td>3.50 </td>
+                <td>0.20</td>
+                <td>9.00</td>
+                </tr>
+                <tr>
+                <td>NO. 2 16/64” Round</td>
+                <td>-</td>
+                <td>6.00 </td>
+                <td>2.00 </td>
+                <td>- </td>
+                <td>3.50 </td>
+                <td>0.20</td>
+                <td>9.00</td>
+                </tr>
+                <tr>
+                <td>“With Splits”</td>
+                <td colspan="7">Each of the above APSA whole grades may be certified as “with splits” providing all requirements of the grade are met; except a tolerance of 15% is allowed for split kernels. </td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="[padding-tp-bt products">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+                <h2 class="prod-h2">South African Peanuts</h2>
+                <table class="table table-bordered" style="border:none;">                
+                <tbody>
+                
+                
+                <tr>
+                    
+                    
+                    <td rowspan="2" class="text-center"><b style="position: relative;top:20px;">Features</b></td>
+                    <td><b>Count 80/100</b></td>
+                  </tr>
+                  <tr>
+                    <td><b>Head Cleaned</b></td>
+                    
+                  </tr>
+
+                <tr>
+                <td>Musty, Sour, Objectionable Odour</td>
+                <td colspan="">Nil</td>                
+                </tr>
+                <tr>
+                <td>Chemical Substances (Sensorial)</td>
+                <td colspan="">Nil</td>                
+                </tr>
+                <tr>
+                <td>Live Insects</td>
+                <td colspan="">Nil</td>                
+                </tr>
+                <tr>
+                <td>Noxious Seeds</td>
+                <td colspan="">Nil</td>                
+                </tr>
+                <tr>
+                <td>Moisture Content</td>
+                <td colspan="">7%</td>                
+                </tr>
+                <tr>
+                <td>Splits</td>
+                <td colspan="">4%</td>                
+                </tr>
+                <tr>
+                <td>Shriveled kernels</td>
+                <td colspan="">40%</td>                
+                </tr>
+                <tr>
+                <td>Broken Kernels</td>
+                <td colspan="">5%</td>                
+                </tr>
+                <tr>
+                <td>Foreign Material (pp/210kg or %) - No Stones/Glass/Metal</td>
+                <td colspan="">8 Parts</td>                
+                </tr>
+
+                <tr>
+                <td>Unsound, Blemished & Soiled - Whole & Split Collectively</td>
+                <td colspan="">10%</td>                
+                </tr>
+                <tr>
+                <td>Unsound - Whole & Split Collectively</td>
+                <td colspan="">5%</td>                
+                </tr>                
+                </tbody>
+                </table>            
+            </div>
+            </div>
+        </div>
+</section>  
+
+
+    {% include 'includes/contact.html' %}   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="{{MEDIA_URL}}js/jquery.min.js"></script>    
+    <!-- Video plugin-->
+    <script type="text/javascript" src="{{MEDIA_URL}}js/jquery.vide.js"></script>
+{% endblock %}

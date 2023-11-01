@@ -1,0 +1,111 @@
+{% extends 'page_layout.html' %}
+{% block content %}
+    <!-- Start Banner -->
+    <div class="inner-banner blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="content">
+                        <h1>Commodities</h1>
+                        <p>The commodities we source and trade</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+    <!-- Start Our Importance Section -->
+    <section class="how-study padding-lg">
+        <div class="container">
+            <ul class="row">
+                <li class="col-sm-4">
+                    <a href="{% url 'peanuts' %}" class="hover">
+                        <div class="overly">
+                            <div class="cnt-block">
+                                <h3>PEANUTS</h3>
+                                <p>Origin: Argentina, USA, India, Africa</p>
+                            </div>
+                        </div>
+                        <figure><img src="{{MEDIA_URL}}images/peanut.jpg" class="img-responsive" alt=""></figure>
+                    </a>
+                </li>
+                <li class="col-sm-4">
+                    <a href="{% url 'greenmungbean' %}" class="hover">
+                        <div class="overly">
+                            <div class="cnt-block">
+                                <h3>GREEN MUNG BEAN</h3>
+                                <p>Origin: Uzbekistan, Argentina, Ethiopia</p>
+                            </div>
+                        </div>
+                        <figure><img src="{{MEDIA_URL}}images/greenmungbean.jpg" class="img-responsive" alt=""></figure>
+                    </a>
+                </li>
+                <li class="col-sm-4">
+                    <a href="{% url 'coriander' %}" class="hover">
+                        <div class="overly">
+                            <div class="cnt-block">
+                                <h3>CORIANDER</h3>
+                                <p>Origin: Russia, Ukraine, Argentina </p>
+                            </div>
+                        </div>
+                        <figure><img src="{{MEDIA_URL}}images/coriander-seed.jpg" class="img-responsive" alt=""></figure>
+                    </a>
+                </li>
+                
+                
+            </ul>
+            <br/>
+            <ul class="row">
+            	<li class="col-sm-4">
+                    <a href="{% url 'chillies' %}" class="hover">
+                        <div class="overly">
+                            <div class="cnt-block">
+                                <h3>CHILLIES</h3>
+                                <p>Origin: India </p>
+                            </div>
+                        </div>
+                        <figure><img src="{{MEDIA_URL}}images/chilli.jpg" class="img-responsive" alt=""></figure>
+                    </a>
+                </li>
+                <li class="col-sm-4">
+                    <a href="{% url 'soybeans' %}" class="hover">
+                        <div class="overly">
+                            <div class="cnt-block">
+                                <h3>SOY</h3>
+                                <p>Origin: USA, Argentina, Africa</p>
+                            </div>
+                        </div>
+                        <figure><img src="{{MEDIA_URL}}images/soy-bean.jpg" class="img-responsive" alt=""></figure>
+                    </a>
+                </li>
+                <li class="col-sm-4">
+                    <a href="{% url 'corn' %}" class="hover">
+                        <div class="overly">
+                            <div class="cnt-block">
+                                <h3>CORN</h3>
+                                <p>Origin: Brazil, Ukraine, Argentina, USA</p>
+                            </div>
+                        </div>
+                        <figure><img src="{{MEDIA_URL}}images/corn.jpg" class="img-responsive" alt=""></figure>
+                    </a>
+                </li>  
+            </ul>
+            <br/>
+            <!-- <ul class="row">
+                
+                <li class="col-sm-4">
+                    <a href="./commodities/chickpeas.html" class="hover">
+                        <div class="overly">
+                            <div class="cnt-block">
+                                <h3>CHICKPEAS</h3>
+                                <p>Origin: Argentina</p>
+                            </div>
+                        </div>
+                        <figure><img src="images/chickpeas.jpg" class="img-responsive" alt=""></figure>
+                    </a>
+                </li>
+            </ul> -->
+        </div>
+    </section>
+    <!-- End Our Importance Section -->    
+{% endblock %}
