@@ -1,5 +1,0 @@
-django==1.11
-django_mysql==2.5.0
-djangorestframework==3.9.4
-python_dateutil==2.8.2
-pyyaml==5.4.1
